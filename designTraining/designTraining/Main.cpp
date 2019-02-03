@@ -1,7 +1,7 @@
 #include"Person.h"
 
 int main() {
-	Person roy("SeongHyun", "Jang", "19940623", "巢", "快府笼", "01020657468");
+	Person roy("SeongHyun", "Jang", Person::birthDate{1994,6,23}, "巢", "快府笼", "01020657468");
+	
 	roy.Print();
-
 }

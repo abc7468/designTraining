@@ -4,22 +4,20 @@
 class Person
 {
 public:
-	Person(const std::string givenName, const std::string familyName, const std::string birth, const std::string gender,
-		const std::string homeAddress, const std::string phone);
+	Person(const std::string givenName, const std::string familyName, struct birthDate birth, const std::string gender, const std::string homeAddress, const std::string phone);
 	~Person();
+
+	typedef struct birthDate {
+		int year;
+		int month;
+		int day;
+	}birthDate;
 
 	void Print();
 private:
 	const std::string givenName;
 	const std::string familyName;
 	std::string fullName;
-
-	typedef struct birthDate{
-		int year;
-		int month;
-		int day;
-	}birthDate;
-
 	birthDate SBirthDate;
 	const std::string gender;
 	const std::string homeAddress;

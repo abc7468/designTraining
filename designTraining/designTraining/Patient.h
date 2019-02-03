@@ -4,5 +4,10 @@ class Patient
 public:
 	Patient();
 	~Patient();
+
+
+
+private:
+
 };
 
