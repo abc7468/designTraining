@@ -20,6 +20,7 @@ private:
 		int day;
 	}birthDate;
 
+	birthDate SBirthDate;
 	const std::string gender;
 	const std::string homeAddress;
 	const std::string phone;
