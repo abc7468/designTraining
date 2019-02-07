@@ -1,6 +1,7 @@
 #pragma once
 #include<string>
 #include<vector>
+
 class StructModum
 {
 public:
@@ -10,14 +11,10 @@ public:
 		int day;
 	}Date;
 	
-	
-	std::vector<std::string> allergiesList;
-	std::vector<std::string> diseasesList;
-	std::vector<std::string> prescriptionsList;
-
-	void AllergyList();
-	void DiseasesList();
-	void PriscriptionsList();
+	typedef struct RandomVal {
+		std::vector <std::string> allergies;
+		std::vector <std::string> sickness;
+	}RandomVal;
 
 
 	StructModum();
