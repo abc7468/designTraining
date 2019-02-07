@@ -10,23 +10,19 @@ public:
 	~Patient();
 
 	
-	void AllergyList();
-	void DiseasesList();
-	void PriscriptionsList();
 	void Init();
+	void PrintState();
 	void Test();
 
 
 private:
 	static int id;
 	int age;
-
-	std::vector<std::string> allergiesList;
-	std::vector<std::string> diseasesList;
-	std::vector<std::string> prescriptionsList;
-
-	std::vector<std::string> prescriptions;
-	std::vector<std::string> allergies;
 	std::vector<std::string> specialReqs;
+	std::vector<std::string> allergy;
+	std::vector<std::string> disease;
+	std::vector<std::string> prescription;
+
+
 };
 

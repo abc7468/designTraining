@@ -8,14 +8,18 @@ public:
 	Person();
 	Person(const std::string givenName, const std::string familyName, StructModum::Date birth, const std::string gender, const std::string homeAddress, const std::string phone);
 	~Person();
-
+	std::string GetFullName();
+	std::string GetGender();
+	std::string GetPhone();
+	std::string GetAddress();
+	StructModum::Date GetDate();
 private:
-	const std::string givenName;
-	const std::string familyName;
+	std::string givenName;
+	std::string familyName;
 	std::string fullName;
 	StructModum::Date Date;
-	const std::string gender;
-	const std::string homeAddress;
-	const std::string phone;
+	std::string gender;
+	std::string homeAddress;
+	std::string phone;
 };
 
